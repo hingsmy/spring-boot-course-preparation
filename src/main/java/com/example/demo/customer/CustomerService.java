@@ -26,6 +26,7 @@ public class CustomerService {
         return getCustomers().stream()
                 .filter(customer -> customer.getId().equals(id))
                 .findFirst()
-                .orElseThrow(() -> new NotFoundException("customer with id " + id + " not found"));
+                .orElseThrow(() -> new NotFoundException("Customer with id " + id + " not found"));
+
     }
 }
