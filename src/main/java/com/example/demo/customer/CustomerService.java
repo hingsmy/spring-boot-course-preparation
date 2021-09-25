@@ -12,9 +12,7 @@ import java.util.List;
 @Slf4j
 public class CustomerService {
 
-
     private final CustomerRepository customerRepository;
-
 
     List<Customer> getCustomers() {
         log.info("getCustomers was called");
